@@ -1,0 +1,12 @@
+/**
+ * Add any custom CSS here.
+ *
+ * This file will be loaded after all other theme stylesheets.
+ */
+.hentry.type-post .entry-content {
+    width: 100%;
+}
+
+.hentry .entry-header {
+    margin-bottom: 2em;
+}
