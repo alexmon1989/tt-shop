@@ -10,3 +10,75 @@
 .hentry .entry-header {
     margin-bottom: 2em;
 }
+
+.woocommerce-breadcrumb {
+    background-color: #f8f8f8;
+}
+
+.site-header,
+.secondary-navigation ul ul,
+.main-navigation ul.menu > li.menu-item-has-children:after,
+.secondary-navigation ul.menu ul,
+.storefront-handheld-footer-bar,
+.storefront-handheld-footer-bar ul li > a,
+.storefront-handheld-footer-bar ul li.search .site-search,
+button.menu-toggle,
+button.menu-toggle:hover {
+    background-color: #2c2d33;
+}
+
+.main-navigation ul li a,
+.site-title a,
+ul.menu li a,
+.site-branding h1 a,
+.site-footer .storefront-handheld-footer-bar a:not(.button),
+button.menu-toggle,
+button.menu-toggle:hover {
+    color: #d5d9db;
+}
+
+button.menu-toggle,
+button.menu-toggle:hover {
+    border-color: #d5d9db;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li:hover > a,
+.site-title a:hover,
+a.cart-contents:hover,
+.site-header-cart .widget_shopping_cart a:hover,
+.site-header-cart:hover > li > a,
+ul.menu li.current-menu-item > a {
+    color: #ffffff;
+}
+
+@media screen and ( min-width: 768px ) {
+    .secondary-navigation ul.menu a:hover {
+        color: #b3b9c0;
+    }
+
+    .secondary-navigation ul.menu a {
+        color: #9aa0a7;
+    }
+
+    .site-header-cart .widget_shopping_cart,
+    .main-navigation ul.menu ul.sub-menu,
+    .main-navigation ul.nav-menu ul.children {
+        background-color: #24252b;
+    }
+}
+
+.site-footer {
+    background-color: #f0f0f0;
+    color: #61656b;
+}
+
+body, .secondary-navigation a, .onsale, .pagination .page-numbers li .page-numbers:not(.current), .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+    color: #60646c;
+}
+
+button.alt, input.alt[type="button"], input.alt[type="reset"], input.alt[type="submit"], .button.alt, .added_to_cart.alt, .widget-area .widget a.button.alt, .added_to_cart, .pagination .page-numbers li .page-numbers.current, .woocommerce-pagination .page-numbers li .page-numbers.current {
+    background-color: #2c2d33;
+    border-color: #2c2d33;
+    color: #ffffff;
+}
