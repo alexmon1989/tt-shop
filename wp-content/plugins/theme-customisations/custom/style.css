@@ -82,3 +82,48 @@ button.alt, input.alt[type="button"], input.alt[type="reset"], input.alt[type="s
     border-color: #2c2d33;
     color: #ffffff;
 }
+
+.beta, h2 {
+    font-weight: bold;
+}
+
+.single-product div.product .woocommerce-product-gallery {
+    margin-bottom: 0;
+}
+
+.woocommerce-tabs ul.tabs {
+    border-bottom: 1px solid #ddd;
+    border-top: 0;
+}
+
+.woocommerce-tabs ul.tabs li {
+    display: inline-block;
+    margin: 0;
+    padding: 0px 1em;
+}
+.woocommerce-tabs ul.tabs li.active:after {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .woocommerce-tabs ul.tabs {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .woocommerce-tabs .panel {
+        width: 100%;
+        float: none;
+    }
+}
+
+.woocommerce-tabs ul.tabs li a{
+    color: #00a0d2;
+}
+
+.woocommerce-tabs ul.tabs li.active a{
+    color: #3E5C9A;
+}
+
+.woocommerce-loop-category__title {
+    font-size: 1.3em !important;
+}

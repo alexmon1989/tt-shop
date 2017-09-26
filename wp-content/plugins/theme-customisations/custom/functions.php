@@ -82,12 +82,51 @@ function storefront_product_categories( $args ) {
 }
 
 /*
- *
  * Removes products count after categories name
- *
  */
 add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
 
 function woo_remove_category_products_count() {
     return;
 }
+
+function storefront_remove_best_selling_products() {
+	remove_action('homepage', 'storefront_best_selling_products', 70);
+}
+add_action('init', 'storefront_remove_best_selling_products');
+
+function storefront_remove_my_account() {
+	remove_action('storefront_header', 'storefront_secondary_navigation', 30);
+}
+add_action('init', 'storefront_remove_my_account');
+
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+	$tabs['additional_information']['title'] = 'Характеристики';
+	return $tabs;
+}
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+function custom_override_checkout_fields( $fields ) {
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_address_1']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_state']);
+	unset($fields['billing']['billing_postcode']);
+	return $fields;
+}
+
+function storefront_post( $args ) {
+	$res = '';
+	$the_post = & get_post( $dummy_id = 468 );
+	if ($the_post) {
+		$res = $the_post->post_content;
+	}
+	echo $res;
+}
+
+function storefront_add_post_home() {
+	add_action( 'homepage', 'storefront_post', 70 );
+}
+add_action('init', 'storefront_add_post_home');
