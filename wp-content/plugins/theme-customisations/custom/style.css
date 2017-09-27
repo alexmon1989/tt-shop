@@ -12,7 +12,7 @@
 }
 
 .woocommerce-breadcrumb {
-    background-color: #f8f8f8;
+    background-color: #efefef;
 }
 
 .site-header,
@@ -24,7 +24,8 @@
 .storefront-handheld-footer-bar ul li.search .site-search,
 button.menu-toggle,
 button.menu-toggle:hover {
-    background-color: #2c2d33;
+    #background-color: #2c2d33;
+    background-color: #fff;
 }
 
 .main-navigation ul li a,
@@ -34,7 +35,10 @@ ul.menu li a,
 .site-footer .storefront-handheld-footer-bar a:not(.button),
 button.menu-toggle,
 button.menu-toggle:hover {
-    color: #d5d9db;
+    #color: #d5d9db;
+    color: #606975;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 button.menu-toggle,
@@ -49,7 +53,12 @@ a.cart-contents:hover,
 .site-header-cart .widget_shopping_cart a:hover,
 .site-header-cart:hover > li > a,
 ul.menu li.current-menu-item > a {
-    color: #ffffff;
+    #color: #ffffff;
+    color: #0da9ef;
+}
+
+.site-title a {
+    color: #0da9ef;
 }
 
 @media screen and ( min-width: 768px ) {
@@ -118,11 +127,12 @@ button.alt, input.alt[type="button"], input.alt[type="reset"], input.alt[type="s
 }
 
 .woocommerce-tabs ul.tabs li a{
-    color: #00a0d2;
+    color: #0da9ef;
 }
 
 .woocommerce-tabs ul.tabs li.active a{
-    color: #3E5C9A;
+    color: #0d71ac;
+    font-weight: bold;
 }
 
 .woocommerce-loop-category__title {
@@ -134,12 +144,7 @@ button.alt, input.alt[type="button"], input.alt[type="reset"], input.alt[type="s
 }
 
 .storefront-handheld-footer-bar ul li.cart .count, button.menu-toggle::after, button.menu-toggle::before, button.menu-toggle span::before {
-    background-color: #d5d9db;
-}
-
-a.more-link {
-    color: #00a0d2;
-    font-weight: bold;
+    background-color: #e1e5e7;
 }
 
 .rpwwt-post-title {
@@ -148,16 +153,25 @@ a.more-link {
 
 .rpwwt-post-title:hover {
     text-decoration: underline;
-    color: #3E5C9A;
+    color: #0da9ef;
 }
 
 .entry-content a {
-    color: #00a0d2;
+    color: #0da9ef;
 }
 
 .entry-content a:hover {
     text-decoration: underline;
-    color: #3E5C9A;
+}
+
+a.more-link {
+    color: #0da9ef;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a.more-link:hover {
+    text-decoration: none;
 }
 
 .alpha, h1 {
@@ -184,4 +198,12 @@ article h2 a {
 
 article h2 {
     font-size: 2.1em !important;
+}
+
+.product-category a:hover, .woocommerce-LoopProduct-link:hover {
+    text-decoration: underline;
+}
+
+span.price {
+    text-decoration: none !important;
 }
