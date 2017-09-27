@@ -69,8 +69,9 @@ ul.menu li.current-menu-item > a {
 }
 
 .site-footer {
-    background-color: #f0f0f0;
+    background-color: #e4e4e4;
     color: #61656b;
+    padding: 1.618em 0 0;
 }
 
 body, .secondary-navigation a, .onsale, .pagination .page-numbers li .page-numbers:not(.current), .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
@@ -126,4 +127,61 @@ button.alt, input.alt[type="button"], input.alt[type="reset"], input.alt[type="s
 
 .woocommerce-loop-category__title {
     font-size: 1.3em !important;
+}
+
+.secondary-navigation .menu a {
+    padding: 0.1em 0.5em;
+}
+
+.storefront-handheld-footer-bar ul li.cart .count, button.menu-toggle::after, button.menu-toggle::before, button.menu-toggle span::before {
+    background-color: #d5d9db;
+}
+
+a.more-link {
+    color: #00a0d2;
+    font-weight: bold;
+}
+
+.rpwwt-post-title {
+    font-weight: 600;
+}
+
+.rpwwt-post-title:hover {
+    text-decoration: underline;
+    color: #3E5C9A;
+}
+
+.entry-content a {
+    color: #00a0d2;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+    color: #3E5C9A;
+}
+
+.alpha, h1 {
+    font-size: 2.1em;
+    font-weight: 600;
+ }
+
+.page-template-template-homepage .entry-header h1 {
+    font-weight: normal;
+}
+
+
+.widget .widget-title, .widget .widgettitle {
+    font-weight: 600;
+}
+
+.category .page-header h1 {
+    display: none;
+}
+
+article h2 a {
+    font-weight: 600;
+}
+
+article h2 {
+    font-size: 2.1em !important;
 }

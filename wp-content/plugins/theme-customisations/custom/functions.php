@@ -100,6 +100,24 @@ function storefront_remove_my_account() {
 }
 add_action('init', 'storefront_remove_my_account');
 
+function social_links() {
+	echo '
+		<nav class="secondary-navigation" role="navigation" aria-label="Secondary Navigation">
+		    <div class="menu-secondary-navigation-container">
+			    <ul id="menu-secondary-navigation" class="menu">
+			        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#" target="_blank" title="Facebook"><img src="/drobov-shop/wp-content/themes/storefront/assets/images/facebook.png" width="40px" alt=""></a></li>
+			        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#" target="_blank" title="Youtube-канал"><img src="/drobov-shop/wp-content/themes/storefront/assets/images/youtube.png" width="40px"  alt=""></a></li>
+				</ul>
+			</div>		    
+		</nav>
+	';
+}
+
+function storefront_add_social_header() {
+	add_action('storefront_header', 'social_links', 30);
+}
+add_action('init', 'storefront_add_social_header');
+
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
 function woo_rename_tabs( $tabs ) {
 	$tabs['additional_information']['title'] = 'Характеристики';
@@ -130,3 +148,27 @@ function storefront_add_post_home() {
 	add_action( 'homepage', 'storefront_post', 70 );
 }
 add_action('init', 'storefront_add_post_home');
+
+/**
+ * Display the post header with a link to the single post
+ *
+ * @since 1.0.0
+ */
+function storefront_post_header() {
+	?>
+	<header class="entry-header">
+		<?php
+		if ( is_single() ) {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+			storefront_posted_on();
+		} else {
+
+			the_title( sprintf( '<h2 class="alpha entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+			if ( 'post' == get_post_type() ) {
+				storefront_posted_on();
+			}
+		}
+		?>
+	</header><!-- .entry-header -->
+	<?php
+}
