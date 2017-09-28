@@ -207,3 +207,34 @@ article h2 {
 span.price {
     text-decoration: none !important;
 }
+
+.wc-forward::after, .woocommerce-Button--next::after {
+    content: "";
+}
+
+ul.woocommerce-mini-cart.cart_list.product_list_widget li.woocommerce-mini-cart-item.mini_cart_item a {
+    color: #f4f4f4;
+}
+
+div.widget_shopping_cart_content p.woocommerce-mini-cart__total.total strong {
+    color: #f4f4f4;
+}
+
+div.widget_shopping_cart_content p.woocommerce-mini-cart__buttons.buttons a.button.wc-forward {
+    color: #f4f4f4;
+}
+
+table.shop_table td:not(.actions), table.shop_table th {
+    border-top: 1px solid !important;
+}
+
+a.showcoupon {
+    color: #e4e4e4;
+    text-decoration: underline;
+}
+
+ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+    display: none;
+}
+
+html body.page-template.page-template-template-fullwidth.page-template-template-fullwidth-php.page.page-id-15.logged-in.admin-bar.woocommerce-checkout.woocommerce-page.woocommerce-order-received.storefront-full-width-content.right-sidebar.woocommerce-active.currency-uah.customize-support div#page.hfeed.site div#content.site-content div.col-full div#primary.content-area main#main.site-main div#post-15.post-15.page.type-page.status-publish.hentry div.entry-content div.woocommerce div.woocommerce-order p

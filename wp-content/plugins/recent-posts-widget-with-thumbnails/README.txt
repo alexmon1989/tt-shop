@@ -1,11 +1,11 @@
 === Recent Posts Widget With Thumbnails ===
 Contributors: Hinjiriyo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKZZ3US2R56RY
-Tags: arabic, aspect ratio, author, category, categories, category, current post, excerpt, extended, featured, featured images, first post image, height, image, images, listed posts, post date, post categories, post category, post title, random, recent posts, sticky, thumb, thumbnail, thumbnails, thumbs, widget, widgets, width, persian, farsi, russian, turkish
+Tags: arabic, aspect ratio, author, category, categories, category, current post, excerpt, extended, featured, featured images, first post image, height, image, images, listed posts, post date, post categories, post category, post title, random, recent posts, sticky, thumb, thumbnail, thumbnails, thumbs, widget, widgets, width, persian, farsi, russian, turkish, japanese
 Requires at least: 2.9
 Requires PHP: 5.2
-Tested up to: 4.8.1
-Stable tag: 5.1.1
+Tested up to: 4.8.2
+Stable tag: 5.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ List of your site&#8217;s most recent posts, with clickable title and thumbnails
 
 == Description ==
 
-The plugin is available in English, German (Deutsch), Persian (فارسی), Arabic (العربية), Polish (Polski) Russian (русский) and Turkish (Türkçe).
+The plugin is available in English, German (Deutsch), Persian (فارسی), Arabic (العربية), Polish (Polski) Russian (русский), Turkish (Türkçe) and Japanese (日本語).
 
 = Lightweight, simple and effective =
 
@@ -133,6 +133,7 @@ The user interface is available in
 * Polish (Polski), kindly drawn up by [Marcin Mikolajczyk](https://profiles.wordpress.org/marcinmik)
 * Russian (ру́сский), kindly drawn up by [dmitriynn](https://profiles.wordpress.org/dmitriynn)
 * Turkish (Türkçe), kindly drawn up by [Mehmet HAKAN](https://profiles.wordpress.org/memomelo)
+* Japanese (日本語), kindly drawn up by [Kazuyuki Kumai](https://wordpress.org/support/users/kazuyk/)
 
 Further translations are welcome. If you want to give in your translation please leave a notice in the [plugin's support forum](https://wordpress.org/support/plugin/recent-posts-widget-with-thumbnails).
 
@@ -173,7 +174,7 @@ The theme should support `wp_head()` in the HTML header section to print the CSS
 
 = Can I set a default thumbnail? =
 
-Yes.
+Yes. Type in the web address of the thumbnail and click on "Save". That's all.
 
 = Can I set the width and height of the thumbnail? =
 
@@ -181,11 +182,11 @@ Yes. You can enter the desired width and height of the thumbnails or select one 
 
 = Can I change the alignment of the thumbnails in the list? =
 
-This feature will come in a future version of the plugin. Set the alignment in the CSS of your theme instead.
+To keep the plugin lightweight: no. Please set the alignment in the CSS of your theme instead.
 
 = Where can I set the CSS of the list? =
 
-This feature will come in a future version of the plugin. Set the CSS in the style.css of your theme instead.
+To keep the plugin lightweight: no. Please set the CSS via a Custom CSS plugin or in the CSS file of your theme instead.
 
 = Can the plugin take the first image of a post as thumbnail image? =
 
@@ -201,6 +202,10 @@ If you want to contribute a translation of the plugin in your language it would 
 2. The second screenshot shows the widget on the Widget Management Page in the backend.
 
 == Changelog ==
+
+= 5.1.2 =
+* Added japanese translation. Thank you very much, [Kazuyuki Kumai](https://wordpress.org/support/users/kazuyk/)
+* Tested successfully with WordPress 4.8.2
 
 = 5.1.1 =
 * Added turkish translation. Thank you very much, [Mehmet HAKAN](https://profiles.wordpress.org/memomelo)
@@ -414,6 +419,9 @@ Successfully tested with WordPress 4.0
 * The plugin was released.
 
 == Upgrade Notice ==
+
+= 5.1.2 =
+Added japanese translation, tested with WordPress 4.8.2
 
 = 5.1.1 =
 Added turkish translation, added Requires PHP info in readme.txt, tested with WordPress 4.8.1
